@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Orbitron:wght@400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+    font-family: "Geist Mono", monospace;
+}
+.container{
+    background: peachpuff;
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 10px;
+   
+    margin: 2% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.data{
+    width: 50%;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+input{
+    width: 80%;
+    padding: 0.7rem;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #333;
+}
+button{
+    width: 35%;
+    padding: 0.7rem;
+    border-radius: 5px;
+    background: rgb(248, 153, 80);
+    border: 1px solid #333;
+}
+
+#contact-list{
+ 
+        width: 100%;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: .5rem;
+    
+}
+.contact{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem ;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    text-align: left;
+    background: white;
+    border: 1px solid black;
+   
+    border-radius: 10px;
+    margin-top: 5px;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .data {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    input, button {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    #contact-list .contact {
+        padding: 1rem;
+        width: 80%;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .data {
+        gap: 0.25rem;
+    }
+
+    #contact-list .contact {
+        font-size: 0.875rem;
+        padding: 0.75rem;
+    }
+}
